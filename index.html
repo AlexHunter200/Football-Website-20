@@ -1,0 +1,2700 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mahathesh Mavalavan | Amateur Footballer Scout Profile</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Official scouting profile for Mahathesh Mavalavan. 22-year-old versatile Malaysian winger (LW/RW) and forward. Review player stats, career history, and action gallery.">
+  <meta name="keywords" content="Mahathesh Mavalavan, Football Scout, Amateur Footballer, Malaysia Football, Bloomball Academy, Left Winger, Player Profile">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome Icons (for UI elements) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <style>
+    /* CSS DESIGN SYSTEM */
+    :root {
+      --bg-primary: #080c14;
+      --bg-secondary: #0f172a;
+      --bg-tertiary: #1e293b;
+      --accent-green: #00f076;
+      --accent-green-muted: #059669;
+      --accent-green-glow: rgba(0, 240, 118, 0.15);
+      --accent-gold: #fbbf24;
+      --accent-gold-muted: #d97706;
+      --accent-gold-glow: rgba(251, 191, 36, 0.2);
+      --text-main: #f8fafc;
+      --text-muted: #94a3b8;
+      --border-color: rgba(255, 255, 255, 0.08);
+      --font-head: 'Outfit', sans-serif;
+      --font-body: 'Inter', sans-serif;
+      --card-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.7);
+      --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      background-color: var(--bg-primary);
+      color: var(--text-main);
+      font-family: var(--font-body);
+    }
+
+    body {
+      overflow-x: hidden;
+      line-height: 1.6;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+      font-family: var(--font-head);
+      font-weight: 700;
+      letter-spacing: -0.02em;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+      transition: var(--transition);
+    }
+
+    /* SCROLLBAR */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: var(--bg-primary);
+    }
+    ::-webkit-scrollbar-thumb {
+      background: var(--bg-tertiary);
+      border-radius: 4px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: var(--accent-green-muted);
+    }
+
+    /* CONTAINER */
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    /* HEADER / NAVIGATION */
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 100;
+      background: rgba(8, 12, 20, 0.8);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border-color);
+      transition: var(--transition);
+    }
+
+    .nav-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 80px;
+    }
+
+    .logo {
+      font-family: var(--font-head);
+      font-size: 24px;
+      font-weight: 800;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: var(--text-main);
+    }
+
+    .logo span {
+      color: var(--accent-green);
+    }
+
+    .logo i {
+      color: var(--accent-green);
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+      gap: 32px;
+    }
+
+    nav ul a {
+      font-weight: 500;
+      font-size: 15px;
+      color: var(--text-muted);
+      position: relative;
+      padding: 6px 0;
+    }
+
+    nav ul a::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background: var(--accent-green);
+      transition: var(--transition);
+    }
+
+    nav ul a:hover, nav ul a.active {
+      color: var(--text-main);
+    }
+
+    nav ul a:hover::after, nav ul a.active::after {
+      width: 100%;
+    }
+
+    .scout-btn {
+      background: linear-gradient(135deg, var(--accent-green-muted), var(--accent-green));
+      color: #000;
+      font-weight: 700;
+      padding: 10px 20px;
+      border-radius: 30px;
+      font-size: 14px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      box-shadow: 0 4px 15px var(--accent-green-glow);
+    }
+
+    .scout-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(0, 240, 118, 0.3);
+      color: #000;
+    }
+
+    .menu-toggle {
+      display: none;
+      font-size: 24px;
+      cursor: pointer;
+      color: var(--text-main);
+    }
+
+    /* HERO SECTION */
+    .hero {
+      position: relative;
+      min-height: 100vh;
+      padding-top: 120px;
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+    }
+
+    /* Soccer Pitch Background details */
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-image: 
+        radial-gradient(circle at 80% 20%, rgba(16, 185, 129, 0.08) 0%, transparent 40%),
+        radial-gradient(circle at 10% 80%, rgba(251, 191, 36, 0.05) 0%, transparent 40%),
+        linear-gradient(rgba(8, 12, 20, 0.95), rgba(8, 12, 20, 0.95)),
+        url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><rect width="100" height="100" fill="none" stroke="rgba(255,255,255,0.01)" stroke-width="1"/></svg>');
+      background-size: cover, cover, cover, 100px 100px;
+      z-index: -1;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 60px;
+      align-items: center;
+    }
+
+    .hero-content {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+
+    .tagline {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid var(--border-color);
+      padding: 6px 16px;
+      border-radius: 100px;
+      width: fit-content;
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--accent-green);
+    }
+
+    .tagline i {
+      animation: pulse 2s infinite;
+    }
+
+    .hero-title {
+      font-size: clamp(40px, 6vw, 72px);
+      line-height: 1.1;
+      font-weight: 900;
+      text-transform: uppercase;
+      background: linear-gradient(to right, var(--text-main) 60%, var(--accent-green));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .hero-subtitle {
+      font-size: 20px;
+      color: var(--text-muted);
+      font-weight: 400;
+      max-width: 600px;
+    }
+
+    .hero-meta {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      background: rgba(255, 255, 255, 0.02);
+      border: 1px solid var(--border-color);
+      padding: 20px;
+      border-radius: 16px;
+      backdrop-filter: blur(8px);
+    }
+
+    .meta-item {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .meta-label {
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--text-muted);
+    }
+
+    .meta-value {
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--text-main);
+    }
+
+    .hero-actions {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 16px 32px;
+      border-radius: 8px;
+      font-weight: 700;
+      font-size: 16px;
+      cursor: pointer;
+      transition: var(--transition);
+    }
+
+    .btn-primary {
+      background: var(--accent-green);
+      color: #080c14;
+      box-shadow: 0 4px 20px var(--accent-green-glow);
+    }
+
+    .btn-primary:hover {
+      background: #00d96a;
+      transform: translateY(-2px);
+      box-shadow: 0 6px 25px rgba(0, 240, 118, 0.4);
+    }
+
+    .btn-secondary {
+      background: rgba(255, 255, 255, 0.05);
+      color: var(--text-main);
+      border: 1px solid var(--border-color);
+    }
+
+    .btn-secondary:hover {
+      background: rgba(255, 255, 255, 0.1);
+      transform: translateY(-2px);
+    }
+
+    /* DYNAMIC HERO IMAGE SLIDER / CARD CONTAINER */
+    .hero-image-area {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+    }
+
+    .glowing-circle {
+      position: absolute;
+      width: 380px;
+      height: 380px;
+      background: radial-gradient(circle, var(--accent-green-glow) 0%, transparent 70%);
+      border-radius: 50%;
+      z-index: 0;
+      animation: float 6s ease-in-out infinite;
+    }
+
+    /* PLAYER CARD STYLING */
+    .player-card-wrapper {
+      position: relative;
+      z-index: 1;
+      width: 100%;
+      max-width: 340px;
+      perspective: 1000px;
+    }
+
+    .fc-card {
+      background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+      border: 2px solid var(--accent-gold);
+      border-radius: 20px;
+      padding: 24px;
+      box-shadow: 0 20px 45px rgba(0, 0, 0, 0.8), 0 0 20px var(--accent-gold-glow);
+      position: relative;
+      overflow: hidden;
+      transition: transform 0.5s ease;
+      transform-style: preserve-3d;
+    }
+
+    .fc-card:hover {
+      transform: rotateY(10deg) rotateX(10deg);
+    }
+
+    /* Shine effect */
+    .fc-card::after {
+      content: '';
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      background: linear-gradient(
+        45deg,
+        transparent 45%,
+        rgba(255, 255, 255, 0.1) 50%,
+        transparent 55%
+      );
+      transform: rotate(45deg);
+      transition: none;
+      pointer-events: none;
+    }
+
+    .fc-card:hover::after {
+      transform: translate(50%, 50%) rotate(45deg);
+      transition: transform 1.2s ease-out;
+    }
+
+    .fc-card-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 15px;
+    }
+
+    .fc-rating-box {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      line-height: 1;
+    }
+
+    .fc-ovr {
+      font-family: var(--font-head);
+      font-size: 54px;
+      font-weight: 900;
+      color: var(--accent-gold);
+      text-shadow: 0 0 10px var(--accent-gold-glow);
+    }
+
+    .fc-pos {
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--text-main);
+      margin-top: 4px;
+      letter-spacing: 0.05em;
+    }
+
+    .fc-flag-club {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      margin-top: 8px;
+    }
+
+    .fc-flag {
+      font-size: 24px;
+      border-radius: 4px;
+    }
+
+    .fc-club-crest {
+      font-size: 24px;
+      color: var(--accent-green);
+    }
+
+    /* Card Player Image */
+    .fc-player-img-container {
+      position: relative;
+      width: 100%;
+      height: 220px;
+      margin-bottom: 15px;
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      border-bottom: 2px dashed rgba(255, 255, 255, 0.1);
+      cursor: pointer;
+    }
+
+    .fc-player-img {
+      max-height: 100%;
+      width: 100%;
+      object-fit: cover;
+      object-position: top center;
+      border-radius: 10px;
+      transition: var(--transition);
+    }
+
+    .fc-player-img-container:hover .fc-player-img {
+      transform: scale(1.05);
+    }
+
+    .img-indicator {
+      position: absolute;
+      bottom: 8px;
+      right: 8px;
+      background: rgba(8, 12, 20, 0.8);
+      border: 1px solid var(--border-color);
+      padding: 4px 8px;
+      border-radius: 20px;
+      font-size: 10px;
+      color: var(--accent-gold);
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    .fc-player-name {
+      text-align: center;
+      font-family: var(--font-head);
+      font-size: 22px;
+      font-weight: 800;
+      text-transform: uppercase;
+      margin-bottom: 15px;
+      letter-spacing: 0.05em;
+      color: var(--text-main);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      padding-bottom: 8px;
+    }
+
+    .fc-stats-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+      font-size: 14px;
+    }
+
+    .fc-stat-item {
+      display: flex;
+      justify-content: space-between;
+      padding: 4px 8px;
+      background: rgba(255, 255, 255, 0.02);
+      border-radius: 4px;
+      border-left: 3px solid var(--accent-gold);
+    }
+
+    .fc-stat-value {
+      font-weight: 700;
+      color: var(--text-main);
+    }
+
+    .fc-stat-label {
+      color: var(--text-muted);
+      text-transform: uppercase;
+      font-size: 12px;
+      font-weight: 600;
+    }
+
+    /* SECTIONS BASIC LAYOUT */
+    section {
+      padding: 100px 0;
+      border-bottom: 1px solid var(--border-color);
+      position: relative;
+    }
+
+    .section-header {
+      text-align: center;
+      margin-bottom: 60px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .section-tag {
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      color: var(--accent-green);
+      background: var(--accent-green-glow);
+      padding: 4px 12px;
+      border-radius: 4px;
+    }
+
+    .section-title {
+      font-size: clamp(30px, 4vw, 44px);
+      text-transform: uppercase;
+      font-weight: 800;
+    }
+
+    .section-desc {
+      color: var(--text-muted);
+      max-width: 600px;
+      font-size: 16px;
+    }
+
+    /* STATS & RADAR CHART SECTION */
+    .stats-layout {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: center;
+    }
+
+    .stats-bars {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .stat-bar-container {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .stat-bar-header {
+      display: flex;
+      justify-content: space-between;
+      font-weight: 600;
+    }
+
+    .stat-bar-name {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .stat-bar-name i {
+      color: var(--accent-green);
+      width: 20px;
+    }
+
+    .stat-bar-value {
+      color: var(--accent-green);
+    }
+
+    .stat-bar-bg {
+      width: 100%;
+      height: 8px;
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 4px;
+      overflow: hidden;
+    }
+
+    .stat-bar-fill {
+      height: 100%;
+      width: 0;
+      background: linear-gradient(to right, var(--accent-green-muted), var(--accent-green));
+      border-radius: 4px;
+      transition: width 1.5s cubic-bezier(0.1, 0.8, 0.2, 1);
+    }
+
+    .chart-container {
+      background: rgba(255, 255, 255, 0.01);
+      border: 1px solid var(--border-color);
+      border-radius: 20px;
+      padding: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      backdrop-filter: blur(10px);
+      position: relative;
+    }
+
+    .chart-label-overlay {
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      font-size: 11px;
+      color: var(--text-muted);
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    /* TACTICAL VERSATILITY PITCH */
+    .tactical-layout {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: center;
+    }
+
+    .pitch-container {
+      background: #091313;
+      border: 2px solid var(--border-color);
+      border-radius: 24px;
+      padding: 30px;
+      position: relative;
+      box-shadow: var(--card-shadow), inset 0 0 40px rgba(0, 240, 118, 0.05);
+    }
+
+    /* Pitch Grid SVG */
+    .pitch-svg-wrapper {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 0.75;
+    }
+
+    .pitch-svg {
+      width: 100%;
+      height: 100%;
+    }
+
+    /* Interactive positions on pitch */
+    .position-node {
+      position: absolute;
+      width: 34px;
+      height: 34px;
+      background: var(--bg-primary);
+      border: 2px solid var(--text-muted);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 11px;
+      font-weight: 800;
+      color: var(--text-muted);
+      cursor: pointer;
+      transform: translate(-50%, -50%);
+      transition: var(--transition);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+      z-index: 10;
+    }
+
+    .position-node:hover {
+      border-color: var(--accent-green);
+      color: var(--accent-green);
+      transform: translate(-50%, -50%) scale(1.15);
+      box-shadow: 0 0 15px var(--accent-green-glow);
+    }
+
+    .position-node.active {
+      background: var(--accent-green);
+      border-color: var(--accent-green);
+      color: #080c14;
+      transform: translate(-50%, -50%) scale(1.25);
+      box-shadow: 0 0 20px var(--accent-green-glow);
+      z-index: 11;
+    }
+
+    .position-node.natural {
+      border-color: var(--accent-gold);
+      color: var(--accent-gold);
+    }
+
+    .position-node.natural.active {
+      background: var(--accent-gold);
+      border-color: var(--accent-gold);
+      color: #080c14;
+      box-shadow: 0 0 20px var(--accent-gold-glow);
+    }
+
+    .position-info-panel {
+      background: rgba(255, 255, 255, 0.02);
+      border: 1px solid var(--border-color);
+      border-radius: 20px;
+      padding: 36px;
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      min-height: 380px;
+    }
+
+    .pos-panel-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid var(--border-color);
+      padding-bottom: 16px;
+    }
+
+    .pos-badge {
+      background: var(--accent-green-glow);
+      border: 1px solid var(--accent-green);
+      color: var(--accent-green);
+      padding: 6px 12px;
+      border-radius: 6px;
+      font-size: 14px;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+
+    .pos-badge.natural {
+      background: var(--accent-gold-glow);
+      border: 1px solid var(--accent-gold);
+      color: var(--accent-gold);
+    }
+
+    .pos-title {
+      font-size: 24px;
+      font-weight: 800;
+    }
+
+    .pos-details {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .pos-desc {
+      color: var(--text-muted);
+      font-size: 15px;
+      line-height: 1.6;
+    }
+
+    .pos-attributes {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .pos-attr {
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid var(--border-color);
+      padding: 6px 14px;
+      border-radius: 30px;
+      font-size: 13px;
+      font-weight: 500;
+    }
+
+    .pos-attr span {
+      color: var(--accent-green);
+      font-weight: 700;
+    }
+
+    /* CAREER JOURNEY TIMELINE */
+    .timeline {
+      max-width: 900px;
+      margin: 0 auto;
+      position: relative;
+    }
+
+    .timeline::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 2px;
+      background: linear-gradient(
+        to bottom,
+        var(--accent-green),
+        var(--accent-green-muted),
+        var(--accent-gold),
+        var(--bg-tertiary)
+      );
+    }
+
+    .timeline-item {
+      margin-bottom: 60px;
+      position: relative;
+      width: 50%;
+      padding: 0 40px;
+      box-sizing: border-box;
+      opacity: 0;
+      transform: translateY(30px);
+      transition: all 0.6s ease;
+    }
+
+    .timeline-item.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .timeline-item:nth-child(odd) {
+      left: 0;
+      text-align: right;
+    }
+
+    .timeline-item:nth-child(even) {
+      left: 50%;
+      text-align: left;
+    }
+
+    .timeline-badge {
+      position: absolute;
+      top: 10px;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background: var(--bg-primary);
+      border: 4px solid var(--accent-green);
+      z-index: 10;
+      transition: var(--transition);
+    }
+
+    .timeline-item:nth-child(odd) .timeline-badge {
+      right: -10px;
+    }
+
+    .timeline-item:nth-child(even) .timeline-badge {
+      left: -10px;
+    }
+
+    .timeline-item:nth-child(odd) .timeline-badge.current {
+      border-color: var(--accent-green);
+      box-shadow: 0 0 15px var(--accent-green);
+      background: var(--accent-green);
+    }
+
+    .timeline-item:nth-child(even) .timeline-badge.current {
+      border-color: var(--accent-green);
+      box-shadow: 0 0 15px var(--accent-green);
+      background: var(--accent-green);
+    }
+
+    .timeline-item .timeline-badge.past {
+      border-color: var(--accent-gold);
+    }
+
+    .timeline-date {
+      font-family: var(--font-head);
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--accent-green);
+      margin-bottom: 8px;
+      display: inline-block;
+      background: var(--accent-green-glow);
+      padding: 4px 12px;
+      border-radius: 4px;
+    }
+
+    .timeline-item:nth-child(odd) .timeline-date {
+      color: var(--accent-green);
+    }
+
+    .timeline-item:nth-child(even) .timeline-date {
+      color: var(--accent-green);
+    }
+
+    /* Past event date styling */
+    .timeline-item.past-event .timeline-date {
+      color: var(--accent-gold);
+      background: var(--accent-gold-glow);
+    }
+
+    .timeline-card {
+      background: rgba(255, 255, 255, 0.02);
+      border: 1px solid var(--border-color);
+      border-radius: 16px;
+      padding: 24px;
+      transition: var(--transition);
+      position: relative;
+    }
+
+    .timeline-card:hover {
+      background: rgba(255, 255, 255, 0.04);
+      border-color: rgba(255, 255, 255, 0.15);
+      transform: translateY(-5px);
+    }
+
+    .timeline-card h3 {
+      font-size: 20px;
+      margin-bottom: 6px;
+    }
+
+    .timeline-team {
+      font-size: 14px;
+      color: var(--accent-gold);
+      font-weight: 600;
+      margin-bottom: 12px;
+    }
+
+    .timeline-team span {
+      color: var(--text-muted);
+      font-weight: 400;
+    }
+
+    .timeline-details {
+      color: var(--text-muted);
+      font-size: 14px;
+      margin-bottom: 12px;
+    }
+
+    .timeline-stats {
+      display: flex;
+      gap: 12px;
+      justify-content: flex-start;
+    }
+
+    .timeline-item:nth-child(odd) .timeline-stats {
+      justify-content: flex-end;
+    }
+
+    .timeline-stat-tag {
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid var(--border-color);
+      padding: 4px 10px;
+      border-radius: 6px;
+      font-size: 12px;
+      font-weight: 600;
+    }
+
+    .timeline-stat-tag span {
+      color: var(--accent-green);
+    }
+
+    /* MEDIA GALLERY SECTION */
+    .gallery-filters {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      margin-bottom: 40px;
+    }
+
+    .filter-btn {
+      background: rgba(255, 255, 255, 0.02);
+      border: 1px solid var(--border-color);
+      color: var(--text-muted);
+      padding: 8px 20px;
+      border-radius: 30px;
+      font-size: 14px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: var(--transition);
+    }
+
+    .filter-btn:hover, .filter-btn.active {
+      background: var(--accent-green);
+      border-color: var(--accent-green);
+      color: #080c14;
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+    .gallery-item {
+      position: relative;
+      border-radius: 12px;
+      overflow: hidden;
+      aspect-ratio: 3/4;
+      cursor: pointer;
+      border: 1px solid var(--border-color);
+      background: rgba(255, 255, 255, 0.01);
+      transition: var(--transition);
+    }
+
+    /* Portrait vs Landscape settings */
+    .gallery-item.landscape {
+      aspect-ratio: 4/3;
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: var(--transition);
+    }
+
+    .gallery-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: linear-gradient(to top, rgba(8, 12, 20, 0.9) 0%, transparent 60%);
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: 20px;
+      opacity: 0;
+      transition: var(--transition);
+    }
+
+    .gallery-item:hover .gallery-overlay {
+      opacity: 1;
+    }
+
+    .gallery-item:hover img {
+      transform: scale(1.05);
+    }
+
+    .gallery-title {
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--text-main);
+    }
+
+    .gallery-tag {
+      font-size: 11px;
+      font-weight: 700;
+      color: var(--accent-green);
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      margin-bottom: 4px;
+    }
+
+    .gallery-zoom-icon {
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      background: rgba(8, 12, 20, 0.7);
+      border-radius: 50%;
+      width: 36px;
+      height: 36px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 14px;
+      color: var(--accent-green);
+      transform: translateY(-10px);
+      opacity: 0;
+      transition: var(--transition);
+    }
+
+    .gallery-item:hover .gallery-zoom-icon {
+      transform: translateY(0);
+      opacity: 1;
+    }
+
+    /* LIGHTBOX MODAL */
+    .lightbox {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(8, 12, 20, 0.95);
+      z-index: 200;
+      display: none;
+      justify-content: center;
+      align-items: center;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    .lightbox.active {
+      display: flex;
+      opacity: 1;
+    }
+
+    .lightbox-content-wrapper {
+      position: relative;
+      max-width: 90%;
+      max-height: 85%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .lightbox-img {
+      max-width: 100%;
+      max-height: 80vh;
+      object-fit: contain;
+      border-radius: 8px;
+      border: 1px solid var(--border-color);
+      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.8);
+    }
+
+    .lightbox-caption {
+      margin-top: 15px;
+      text-align: center;
+      font-family: var(--font-head);
+      font-size: 18px;
+      font-weight: 600;
+      color: var(--text-main);
+    }
+
+    .lightbox-close {
+      position: absolute;
+      top: -45px;
+      right: 0;
+      font-size: 28px;
+      color: var(--text-muted);
+      cursor: pointer;
+      transition: var(--transition);
+    }
+
+    .lightbox-close:hover {
+      color: var(--accent-green);
+    }
+
+    .lightbox-nav {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 36px;
+      color: var(--text-muted);
+      cursor: pointer;
+      transition: var(--transition);
+      background: rgba(255, 255, 255, 0.05);
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      user-select: none;
+    }
+
+    .lightbox-nav:hover {
+      color: var(--accent-green);
+      background: rgba(255, 255, 255, 0.1);
+    }
+
+    .lightbox-prev {
+      left: -80px;
+    }
+
+    .lightbox-next {
+      right: -80px;
+    }
+
+    /* CONTACT SECTION */
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 0.8fr 1.2fr;
+      gap: 60px;
+    }
+
+    .contact-info-panel {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+    }
+
+    .contact-card {
+      background: rgba(255, 255, 255, 0.01);
+      border: 1px solid var(--border-color);
+      border-radius: 16px;
+      padding: 24px;
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
+    }
+
+    .contact-icon {
+      background: var(--accent-green-glow);
+      border: 1px solid var(--accent-green);
+      width: 48px;
+      height: 48px;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 18px;
+      color: var(--accent-green);
+      flex-shrink: 0;
+    }
+
+    .contact-details h3 {
+      font-size: 18px;
+      margin-bottom: 4px;
+    }
+
+    .contact-details p {
+      color: var(--text-muted);
+      font-size: 14px;
+    }
+
+    .contact-details a:hover {
+      color: var(--accent-green);
+    }
+
+    .social-links {
+      display: flex;
+      gap: 12px;
+      margin-top: 10px;
+    }
+
+    .social-icon {
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid var(--border-color);
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 16px;
+      color: var(--text-muted);
+      transition: var(--transition);
+    }
+
+    .social-icon:hover {
+      background: var(--accent-green);
+      color: #080c14;
+      border-color: var(--accent-green);
+      transform: translateY(-2px);
+    }
+
+    .contact-form {
+      background: rgba(255, 255, 255, 0.02);
+      border: 1px solid var(--border-color);
+      border-radius: 20px;
+      padding: 40px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .form-group label {
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .form-group input, .form-group select, .form-group textarea {
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid var(--border-color);
+      padding: 12px 16px;
+      border-radius: 8px;
+      color: var(--text-main);
+      font-family: var(--font-body);
+      font-size: 15px;
+      transition: var(--transition);
+    }
+
+    .form-group input:focus, .form-group select:focus, .form-group textarea:focus {
+      outline: none;
+      border-color: var(--accent-green);
+      background: rgba(255, 255, 255, 0.05);
+      box-shadow: 0 0 10px var(--accent-green-glow);
+    }
+
+    .form-checkbox {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      cursor: pointer;
+      font-size: 14px;
+      color: var(--text-muted);
+    }
+
+    .form-checkbox input {
+      accent-color: var(--accent-green);
+      width: 18px;
+      height: 18px;
+    }
+
+    .submit-btn {
+      background: var(--accent-green);
+      color: #080c14;
+      border: none;
+      padding: 16px;
+      border-radius: 8px;
+      font-weight: 700;
+      font-size: 16px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      box-shadow: 0 4px 15px var(--accent-green-glow);
+      transition: var(--transition);
+      margin-top: 10px;
+    }
+
+    .submit-btn:hover {
+      background: #00d96a;
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(0, 240, 118, 0.35);
+    }
+
+    .submit-success {
+      display: none;
+      background: var(--accent-green-glow);
+      border: 1px solid var(--accent-green);
+      color: var(--accent-green);
+      padding: 16px;
+      border-radius: 8px;
+      font-weight: 600;
+      text-align: center;
+    }
+
+    /* FOOTER */
+    footer {
+      background: #05070a;
+      padding: 40px 0;
+      text-align: center;
+      border-top: 1px solid var(--border-color);
+      color: var(--text-muted);
+      font-size: 14px;
+    }
+
+    footer p {
+      margin-bottom: 12px;
+    }
+
+    .footer-highlight {
+      color: var(--accent-green);
+      font-weight: 600;
+    }
+
+    /* ANIMATIONS */
+    @keyframes float {
+      0% { transform: translateY(0px); }
+      50% { transform: translateY(-15px); }
+      100% { transform: translateY(0px); }
+    }
+
+    @keyframes pulse {
+      0% { opacity: 0.6; }
+      50% { opacity: 1; }
+      100% { opacity: 0.6; }
+    }
+
+    /* RESPONSIVENESS */
+    @media (max-width: 1024px) {
+      .hero-grid {
+        grid-template-columns: 1fr;
+        gap: 50px;
+        text-align: center;
+      }
+
+      .hero-content {
+        align-items: center;
+      }
+
+      .hero-meta {
+        width: 100%;
+        max-width: 500px;
+      }
+
+      .hero-actions {
+        justify-content: center;
+      }
+
+      .stats-layout, .tactical-layout, .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+      }
+
+      .chart-container {
+        order: -1;
+      }
+
+      .pitch-container {
+        max-width: 500px;
+        margin: 0 auto;
+        width: 100%;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .menu-toggle {
+        display: block;
+      }
+
+      nav ul {
+        position: fixed;
+        top: 80px;
+        left: -100%;
+        width: 100%;
+        height: calc(100vh - 80px);
+        background: var(--bg-primary);
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+        transition: 0.4s ease;
+        z-index: 99;
+      }
+
+      nav ul.active {
+        left: 0;
+      }
+
+      .scout-btn {
+        display: none; /* Hide top scout button on mobile */
+      }
+
+      .timeline::before {
+        left: 30px;
+      }
+
+      .timeline-item {
+        width: 100%;
+        padding-left: 60px;
+        padding-right: 0;
+        text-align: left !important;
+      }
+
+      .timeline-item:nth-child(even) {
+        left: 0;
+      }
+
+      .timeline-badge {
+        left: 20px !important;
+        right: auto !important;
+      }
+
+      .timeline-item:nth-child(odd) .timeline-stats {
+        justify-content: flex-start;
+      }
+
+      .form-row {
+        grid-template-columns: 1fr;
+      }
+
+      .lightbox-nav {
+        width: 44px;
+        height: 44px;
+        font-size: 24px;
+      }
+
+      .lightbox-prev {
+        left: -50px;
+      }
+
+      .lightbox-next {
+        right: -50px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .hero-meta {
+        grid-template-columns: 1fr;
+        gap: 12px;
+      }
+
+      .gallery-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .lightbox-prev {
+        left: -10px;
+        background: rgba(8, 12, 20, 0.8);
+      }
+
+      .lightbox-next {
+        right: -10px;
+        background: rgba(8, 12, 20, 0.8);
+      }
+    }
+
+    /* PRINT STYLES - Optimized for scout reports */
+    @media print {
+      body {
+        background: #fff;
+        color: #000;
+        font-size: 12pt;
+      }
+
+      header, footer, .hero-actions, .gallery-filters, .gallery-grid, .contact-form, .submit-btn, .lightbox, .menu-toggle, .scout-btn {
+        display: none !important;
+      }
+
+      section {
+        page-break-inside: avoid;
+        border-bottom: 1px solid #ccc;
+        padding: 20px 0;
+      }
+
+      .hero {
+        min-height: auto;
+        padding-top: 0;
+      }
+
+      .hero-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .fc-card {
+        border: 2px solid #000;
+        box-shadow: none;
+        background: #fff;
+        color: #000;
+      }
+
+      .fc-ovr, .fc-pos, .fc-player-name, .fc-stat-value {
+        color: #000 !important;
+      }
+
+      .fc-stat-item {
+        border-left: 3px solid #000;
+        background: #eee;
+      }
+
+      .timeline::before {
+        display: none;
+      }
+
+      .timeline-item {
+        width: 100% !important;
+        page-break-inside: avoid;
+        text-align: left !important;
+        padding: 10px 0 !important;
+      }
+
+      .timeline-card {
+        border: 1px solid #ccc;
+        background: #fff;
+        color: #000;
+      }
+
+      .timeline-badge {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="container nav-container">
+      <a href="#" class="logo">
+        <i class="fa-solid fa-person-running"></i>
+        MAHATHESH<span>.</span>
+      </a>
+      
+      <nav>
+        <ul id="nav-links">
+          <li><a href="#home" class="active">Profile</a></li>
+          <li><a href="#stats">Stats & Analytics</a></li>
+          <li><a href="#versatility">Tactical Role</a></li>
+          <li><a href="#career">Career Journey</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <a href="#contact" class="scout-btn">
+        <i class="fa-solid fa-clipboard-list"></i> Scout Report
+      </a>
+
+      <div class="menu-toggle" id="mobile-menu">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section id="home" class="hero">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <div class="tagline">
+          <i class="fa-solid fa-circle-dot"></i> Available for Trials & Scouting
+        </div>
+        <h1 class="hero-title">Mahathesh<br>Mavalavan</h1>
+        <p class="hero-subtitle">
+          Dynamic and versatile amateur footballer from Malaysia. A natural-born Left Winger possessing technical proficiency to dominate across the attacking line and adapt defensively.
+        </p>
+        
+        <div class="hero-meta">
+          <div class="meta-item">
+            <span class="meta-label">Age</span>
+            <span class="meta-value">22 Years</span>
+          </div>
+          <div class="meta-item">
+            <span class="meta-label">Nationality</span>
+            <span class="meta-value">Malaysia 🇲🇾</span>
+          </div>
+          <div class="meta-item">
+            <span class="meta-label">Current Club</span>
+            <span class="meta-value">Bloomball Academy</span>
+          </div>
+        </div>
+
+        <div class="hero-actions">
+          <a href="#contact" class="btn btn-primary">
+            <i class="fa-solid fa-envelope"></i> Request Trial
+          </a>
+          <button onclick="window.print()" class="btn btn-secondary">
+            <i class="fa-solid fa-download"></i> Print Scout Sheet
+          </button>
+        </div>
+      </div>
+
+      <div class="hero-image-area">
+        <div class="glowing-circle"></div>
+        <div class="player-card-wrapper">
+          <!-- EA SPORTS FC STYLE CARD -->
+          <div class="fc-card" id="interactive-card">
+            <div class="fc-card-header">
+              <div class="fc-rating-box">
+                <span class="fc-ovr">76</span>
+                <span class="fc-pos">LW</span>
+              </div>
+              <div class="fc-flag-club">
+                <span class="fc-flag" title="Malaysia">🇲🇾</span>
+                <i class="fa-solid fa-shield-halved fc-club-crest" title="Bloomball Academy"></i>
+              </div>
+            </div>
+            
+            <div class="fc-player-img-container" id="card-img-toggle" title="Click to swap action shot">
+              <!-- Default Image is Cyan kit profile -->
+              <img src="IMG_20260404_233124_505.jpg" alt="Mahathesh Mavalavan" class="fc-player-img" id="card-player-img">
+              <div class="img-indicator">
+                <i class="fa-solid fa-rotate"></i> Swap
+              </div>
+            </div>
+            
+            <div class="fc-player-name">Mahathesh</div>
+            
+            <div class="fc-stats-grid">
+              <div class="fc-stat-item">
+                <span class="fc-stat-value">81</span>
+                <span class="fc-stat-label">PAC</span>
+              </div>
+              <div class="fc-stat-item">
+                <span class="fc-stat-value">81</span>
+                <span class="fc-stat-label">DRI</span>
+              </div>
+              <div class="fc-stat-item">
+                <span class="fc-stat-value">70</span>
+                <span class="fc-stat-label">SHO</span>
+              </div>
+              <div class="fc-stat-item">
+                <span class="fc-stat-value">79</span>
+                <span class="fc-stat-label">PAS</span>
+              </div>
+              <div class="fc-stat-item">
+                <span class="fc-stat-value">49</span>
+                <span class="fc-stat-label">DEF</span>
+              </div>
+              <div class="fc-stat-item">
+                <span class="fc-stat-value">69</span>
+                <span class="fc-stat-label">PHY</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS & RADAR CHART SECTION -->
+  <section id="stats">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Player Analytics</span>
+        <h2 class="section-title">Technical Statistics</h2>
+        <p class="section-desc">Performance ratings based on academy evaluations, league tracking, and match logs.</p>
+      </div>
+
+      <div class="stats-layout">
+        <!-- Stats Progress Bars -->
+        <div class="stats-bars">
+          <!-- SPEED -->
+          <div class="stat-bar-container">
+            <div class="stat-bar-header">
+              <span class="stat-bar-name"><i class="fa-solid fa-bolt"></i> Speed / Acceleration</span>
+              <span class="stat-bar-value">81 / 100</span>
+            </div>
+            <div class="stat-bar-bg">
+              <div class="stat-bar-fill" data-width="81%"></div>
+            </div>
+          </div>
+          
+          <!-- DRIBBLING -->
+          <div class="stat-bar-container">
+            <div class="stat-bar-header">
+              <span class="stat-bar-name"><i class="fa-solid fa-wand-magic-sparkles"></i> Dribbling & Control</span>
+              <span class="stat-bar-value">81 / 100</span>
+            </div>
+            <div class="stat-bar-bg">
+              <div class="stat-bar-fill" data-width="81%"></div>
+            </div>
+          </div>
+          
+          <!-- PASSING -->
+          <div class="stat-bar-container">
+            <div class="stat-bar-header">
+              <span class="stat-bar-name"><i class="fa-solid fa-arrows-spin"></i> Short/Long Passing</span>
+              <span class="stat-bar-value">79 / 100</span>
+            </div>
+            <div class="stat-bar-bg">
+              <div class="stat-bar-fill" data-width="79%"></div>
+            </div>
+          </div>
+
+          <!-- CROSSING -->
+          <div class="stat-bar-container">
+            <div class="stat-bar-header">
+              <span class="stat-bar-name"><i class="fa-solid fa-bezier-curve"></i> Crossing Accuracy</span>
+              <span class="stat-bar-value">73 / 100</span>
+            </div>
+            <div class="stat-bar-bg">
+              <div class="stat-bar-fill" data-width="73%"></div>
+            </div>
+          </div>
+          
+          <!-- SHOOTING -->
+          <div class="stat-bar-container">
+            <div class="stat-bar-header">
+              <span class="stat-bar-name"><i class="fa-solid fa-bullseye"></i> Shooting / Finishing</span>
+              <span class="stat-bar-value">70 / 100</span>
+            </div>
+            <div class="stat-bar-bg">
+              <div class="stat-bar-fill" data-width="70%"></div>
+            </div>
+          </div>
+          
+          <!-- STAMINA -->
+          <div class="stat-bar-container">
+            <div class="stat-bar-header">
+              <span class="stat-bar-name"><i class="fa-solid fa-heart-pulse"></i> Stamina & Workrate</span>
+              <span class="stat-bar-value">69 / 100</span>
+            </div>
+            <div class="stat-bar-bg">
+              <div class="stat-bar-fill" data-width="69%"></div>
+            </div>
+          </div>
+          
+          <!-- TACKLING -->
+          <div class="stat-bar-container">
+            <div class="stat-bar-header">
+              <span class="stat-bar-name"><i class="fa-solid fa-shield"></i> Tackling & Interceptions</span>
+              <span class="stat-bar-value">49 / 100</span>
+            </div>
+            <div class="stat-bar-bg">
+              <div class="stat-bar-fill" data-width="49%"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Canvas Radar Chart -->
+        <div class="chart-container">
+          <div class="chart-label-overlay">
+            <i class="fa-solid fa-chart-pie"></i> Interactive Radar
+          </div>
+          <canvas id="radarChart" width="360" height="360"></canvas>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INTERACTIVE TACTICAL PITCH VERSATILITY -->
+  <section id="versatility">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Tactical Analysis</span>
+        <h2 class="section-title">Positional Versatility</h2>
+        <p class="section-desc">Mahathesh is a highly adaptable player. Select positions on the tactical pitch to view his scout analysis reports.</p>
+      </div>
+
+      <div class="tactical-layout">
+        <!-- Interactive SVG Pitch -->
+        <div class="pitch-container">
+          <div class="pitch-svg-wrapper">
+            <!-- Draw soccer pitch using inline SVG -->
+            <svg class="pitch-svg" viewBox="0 0 300 400" xmlns="http://www.w3.org/2000/svg">
+              <!-- Background Grass -->
+              <rect x="0" y="0" width="300" height="400" fill="#08100f" rx="10"/>
+              <!-- Border lines -->
+              <rect x="15" y="15" width="270" height="370" fill="none" stroke="rgba(0, 240, 118, 0.2)" stroke-width="2"/>
+              <!-- Halfway line -->
+              <line x1="15" y1="200" x2="285" y2="200" stroke="rgba(0, 240, 118, 0.2)" stroke-width="2"/>
+              <!-- Center circle -->
+              <circle cx="150" cy="200" r="40" fill="none" stroke="rgba(0, 240, 118, 0.2)" stroke-width="2"/>
+              <circle cx="150" cy="200" r="3" fill="rgba(0, 240, 118, 0.2)"/>
+              
+              <!-- Penalty Area Top -->
+              <rect x="65" y="15" width="170" height="60" fill="none" stroke="rgba(0, 240, 118, 0.2)" stroke-width="2"/>
+              <rect x="105" y="15" width="90" height="20" fill="none" stroke="rgba(0, 240, 118, 0.2)" stroke-width="2"/>
+              <path d="M 115 75 A 40 40 0 0 0 185 75" fill="none" stroke="rgba(0, 240, 118, 0.2)" stroke-width="2"/>
+              
+              <!-- Penalty Area Bottom -->
+              <rect x="65" y="325" width="170" height="60" fill="none" stroke="rgba(0, 240, 118, 0.2)" stroke-width="2"/>
+              <rect x="105" y="365" width="90" height="20" fill="none" stroke="rgba(0, 240, 118, 0.2)" stroke-width="2"/>
+              <path d="M 115 325 A 40 40 0 0 1 185 325" fill="none" stroke="rgba(0, 240, 118, 0.2)" stroke-width="2"/>
+              
+              <!-- Goal areas -->
+              <line x1="125" y1="15" x2="175" y2="15" stroke="rgba(0, 240, 118, 0.5)" stroke-width="4"/>
+              <line x1="125" y1="385" x2="175" y2="385" stroke="rgba(0, 240, 118, 0.5)" stroke-width="4"/>
+            </svg>
+
+            <!-- Position nodes absolute positioned relative to pitch container -->
+            <!-- Top of pitch is opponent goal, bottom is defending goal -->
+            <!-- LW (Natural) -->
+            <div class="position-node natural active" style="top: 25%; left: 18%;" data-pos="lw" title="Left Wing">LW</div>
+            <!-- RW -->
+            <div class="position-node" style="top: 25%; left: 82%;" data-pos="rw" title="Right Wing">RW</div>
+            <!-- ST -->
+            <div class="position-node" style="top: 15%; left: 50%;" data-pos="st" title="Striker">ST</div>
+            <!-- CF -->
+            <div class="position-node" style="top: 25%; left: 50%;" data-pos="cf" title="Centre Forward">CF</div>
+            <!-- CAM -->
+            <div class="position-node" style="top: 38%; left: 50%;" data-pos="cam" title="Centre Attacking Midfield">CAM</div>
+            <!-- CM -->
+            <div class="position-node" style="top: 50%; left: 50%;" data-pos="cm" title="Centre Midfield">CM</div>
+            <!-- RB -->
+            <div class="position-node" style="top: 72%; left: 82%;" data-pos="rb" title="Right Back">RB</div>
+          </div>
+        </div>
+
+        <!-- Position Details Panel -->
+        <div class="position-info-panel" id="position-panel">
+          <div class="pos-panel-header">
+            <h3 class="pos-title" id="panel-title">Left Winger</h3>
+            <span class="pos-badge natural" id="panel-badge">Natural Position</span>
+          </div>
+          
+          <div class="pos-details">
+            <p class="pos-desc" id="panel-desc">
+              Mahathesh operates primarily as an explosive winger on the left flank. He excels at hugging the touchline to stretch opposing defensive shapes, utilizing his high speed (81) and dribbling (81) to isolate fullbacks in 1v1 situations before delivering accurate crosses (73) or cutting inside to create shooting angles.
+            </p>
+            
+            <div style="display: flex; flex-direction: column; gap: 8px;">
+              <h4 style="font-size: 14px; text-transform: uppercase; color: var(--text-muted);">Scout Match Role</h4>
+              <div class="pos-attributes" id="panel-attributes">
+                <span class="pos-attr">Pace: <span>81</span></span>
+                <span class="pos-attr">Dribbling: <span>81</span></span>
+                <span class="pos-attr">Crossing: <span>73</span></span>
+                <span class="pos-attr">1v1 Isolation</span>
+                <span class="pos-attr">Inverted Runs</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CAREER TIMELINE -->
+  <section id="career">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">The Journey</span>
+        <h2 class="section-title">Career timeline</h2>
+        <p class="section-desc">From elementary school local leagues to professional academy preparation.</p>
+      </div>
+
+      <div class="timeline">
+        <!-- Bloomball Academy (2026 - Present) -->
+        <div class="timeline-item">
+          <div class="timeline-badge current"></div>
+          <span class="timeline-date">Jan 2026 - Present</span>
+          <div class="timeline-card">
+            <h3>Bloomball Academy</h3>
+            <div class="timeline-team">First Football Academy <span>| Malaysia</span></div>
+            <p class="timeline-details">
+              Joined his first ever formal academy to refine technical, tactical, and strength foundations. Actively training and playing matches.
+            </p>
+            <div class="timeline-stats">
+              <span class="timeline-stat-tag">Status: <span>Active</span></span>
+              <span class="timeline-stat-tag">Role: <span>LW/FW</span></span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Taman Bernam Baru FC (2025) -->
+        <div class="timeline-item past-event">
+          <div class="timeline-badge past"></div>
+          <span class="timeline-date">May 2025 - Jul 2025</span>
+          <div class="timeline-card">
+            <h3>TBB FC (Taman Bernam Baru FC)</h3>
+            <div class="timeline-team">Slim River League <span>| Local Team</span></div>
+            <p class="timeline-details">
+              Represented his local club in a competitive district league structure. Despite the team's elimination in the group stage, provided crucial attacking threat on the wings.
+            </p>
+            <div class="timeline-stats">
+              <span class="timeline-stat-tag">Assists: <span>1</span></span>
+              <span class="timeline-stat-tag">Stage: <span>Group Stage</span></span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Black Squad Puchong (2024) -->
+        <div class="timeline-item past-event">
+          <div class="timeline-badge past"></div>
+          <span class="timeline-date">Apr 2024 - Oct 2024</span>
+          <div class="timeline-card">
+            <h3>Black Squad</h3>
+            <div class="timeline-team">Puchong Social League <span>| Indian Football Team</span></div>
+            <p class="timeline-details">
+              Joined immediately after graduating high school. Established himself as a regular goal-scoring threat during the social league tournament.
+            </p>
+            <div class="timeline-stats">
+              <span class="timeline-stat-tag">Goals: <span>5</span></span>
+              <span class="timeline-stat-tag">Finish: <span>2nd Place</span></span>
+            </div>
+          </div>
+        </div>
+
+        <!-- CSI Tournament (High School) -->
+        <div class="timeline-item past-event">
+          <div class="timeline-badge past"></div>
+          <span class="timeline-date">High School Era</span>
+          <div class="timeline-card">
+            <h3>CSI Tournament</h3>
+            <div class="timeline-team">Indian Community Championship <span>| High School</span></div>
+            <p class="timeline-details">
+              Competed in the CSI football tournament, showcasing outstanding resilience and speed. Guided the squad to a podium placement.
+            </p>
+            <div class="timeline-stats">
+              <span class="timeline-stat-tag">Finish: <span>3rd Place</span></span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Elementary School Tournaments (2016) -->
+        <div class="timeline-item past-event">
+          <div class="timeline-badge past"></div>
+          <span class="timeline-date">2016</span>
+          <div class="timeline-card">
+            <h3>Early Competitive Years</h3>
+            <div class="timeline-team">Ipoh & Bidor Tournaments <span>| Elementary School</span></div>
+            <p class="timeline-details">
+              Initiated competitive play with two key tournament appearances:
+              <br>1. Ipoh Tournament: Reached the Round of 16.
+              <br>2. State Level Competition (Bidor): Represented district, eliminated in the Group Stage.
+            </p>
+            <div class="timeline-stats">
+              <span class="timeline-stat-tag">Tournaments: <span>2</span></span>
+              <span class="timeline-stat-tag">City: <span>Ipoh / Bidor</span></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MEDIA SHOWCASE / GALLERY -->
+  <section id="gallery">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Match Day Footage</span>
+        <h2 class="section-title">Action gallery</h2>
+        <p class="section-desc">On-the-pitch action shots capturing speed, jumping headers, dribbles, and matches.</p>
+      </div>
+
+      <!-- Gallery Filters -->
+      <div class="gallery-filters">
+        <button class="filter-btn active" data-filter="all">All Photos</button>
+        <button class="filter-btn" data-filter="match">Match Action</button>
+        <button class="filter-btn" data-filter="profile">Kit Profiles</button>
+      </div>
+
+      <!-- Action Grid -->
+      <div class="gallery-grid">
+        <!-- 1. IMG_20260404_233124_505.jpg -->
+        <div class="gallery-item" data-category="profile" onclick="openLightbox(0)">
+          <img src="IMG_20260404_233124_505.jpg" alt="Kit Profile - White/Cyan kit, standing view" loading="lazy">
+          <div class="gallery-overlay">
+            <span class="gallery-tag">Kit Profile</span>
+            <span class="gallery-title">Mahathesh - Bloomball Academy</span>
+          </div>
+          <div class="gallery-zoom-icon"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+        </div>
+
+        <!-- 2. IMG_1816.JPG -->
+        <div class="gallery-item" data-category="match" onclick="openLightbox(1)">
+          <img src="IMG_1816.JPG" alt="Match Action - Dribbling past defenders" loading="lazy">
+          <div class="gallery-overlay">
+            <span class="gallery-tag">Match Action</span>
+            <span class="gallery-title">Pacing Down the Flank</span>
+          </div>
+          <div class="gallery-zoom-icon"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+        </div>
+
+        <!-- 3. IMG_20260404_233124_528.jpg -->
+        <div class="gallery-item" data-category="profile" onclick="openLightbox(2)">
+          <img src="IMG_20260404_233124_528.jpg" alt="Kit Profile - White/Cyan kit, profile view" loading="lazy">
+          <div class="gallery-overlay">
+            <span class="gallery-tag">Kit Profile</span>
+            <span class="gallery-title">Ready for Training Session</span>
+          </div>
+          <div class="gallery-zoom-icon"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+        </div>
+
+        <!-- 4. IMG_3141.jpg -->
+        <div class="gallery-item" data-category="match" onclick="openLightbox(3)">
+          <img src="IMG_3141.jpg" alt="Match Action - High aerial duel header" loading="lazy">
+          <div class="gallery-overlay">
+            <span class="gallery-tag">Match Action</span>
+            <span class="gallery-title">Aerial Duel / High Jump Header</span>
+          </div>
+          <div class="gallery-zoom-icon"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+        </div>
+
+        <!-- 5. IMG_3151.jpg -->
+        <div class="gallery-item" data-category="match" onclick="openLightbox(4)">
+          <img src="IMG_3151.jpg" alt="Match Action - Sliding tackle challenge" loading="lazy">
+          <div class="gallery-overlay">
+            <span class="gallery-tag">Match Action</span>
+            <span class="gallery-title">Defensive Contestation & Shielding</span>
+          </div>
+          <div class="gallery-zoom-icon"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+        </div>
+
+        <!-- 6. IMG_8324.jpg -->
+        <div class="gallery-item" data-category="match" onclick="openLightbox(5)">
+          <img src="IMG_8324.jpg" alt="Match Action - Running with ball" loading="lazy">
+          <div class="gallery-overlay">
+            <span class="gallery-tag">Match Action</span>
+            <span class="gallery-title">Carrying Possession forward</span>
+          </div>
+          <div class="gallery-zoom-icon"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+        </div>
+
+        <!-- 7. IMG_8638.jpg -->
+        <div class="gallery-item" data-category="profile" onclick="openLightbox(6)">
+          <img src="IMG_8638.jpg" alt="Kit Profile - TBB FC red jersey, back view" loading="lazy">
+          <div class="gallery-overlay">
+            <span class="gallery-tag">Kit Profile</span>
+            <span class="gallery-title">No. 20 - Taman Bernam Baru FC</span>
+          </div>
+          <div class="gallery-zoom-icon"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+        </div>
+
+        <!-- 8. IMG_8805.jpg -->
+        <div class="gallery-item" data-category="match" onclick="openLightbox(7)">
+          <img src="IMG_8805.jpg" alt="Match Action - Tight control in midfield" loading="lazy">
+          <div class="gallery-overlay">
+            <span class="gallery-tag">Match Action</span>
+            <span class="gallery-title">Tight-Space Dribble</span>
+          </div>
+          <div class="gallery-zoom-icon"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+        </div>
+
+        <!-- 9. IMG_8963.jpg -->
+        <div class="gallery-item" data-category="match" onclick="openLightbox(8)">
+          <img src="IMG_8963.jpg" alt="Match Action - Intense sprint" loading="lazy">
+          <div class="gallery-overlay">
+            <span class="gallery-tag">Match Action</span>
+            <span class="gallery-title">Off-the-ball Wing Run</span>
+          </div>
+          <div class="gallery-zoom-icon"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+        </div>
+
+        <!-- 10. PUT_3400.JPG -->
+        <div class="gallery-item" data-category="match" onclick="openLightbox(9)">
+          <img src="PUT_3400.JPG" alt="Match Action - Ball recovery" loading="lazy">
+          <div class="gallery-overlay">
+            <span class="gallery-tag">Match Action</span>
+            <span class="gallery-title">Pressuring and Intercepting</span>
+          </div>
+          <div class="gallery-zoom-icon"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+        </div>
+
+        <!-- 11. PUT_3736.JPG -->
+        <div class="gallery-item" data-category="profile" onclick="openLightbox(10)">
+          <img src="PUT_3736.JPG" alt="Kit Profile - Academy jersey portrait" loading="lazy">
+          <div class="gallery-overlay">
+            <span class="gallery-tag">Kit Profile</span>
+            <span class="gallery-title">Academy Matchday Kit</span>
+          </div>
+          <div class="gallery-zoom-icon"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+        </div>
+
+        <!-- 12. PUT_3739.JPG -->
+        <div class="gallery-item" data-category="match" onclick="openLightbox(11)">
+          <img src="PUT_3739.JPG" alt="Match Action - Cross execution" loading="lazy">
+          <div class="gallery-overlay">
+            <span class="gallery-tag">Match Action</span>
+            <span class="gallery-title">Crossing from Left Flank</span>
+          </div>
+          <div class="gallery-zoom-icon"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+        </div>
+
+        <!-- 13. PUT_3927.JPG -->
+        <div class="gallery-item" data-category="match" onclick="openLightbox(12)">
+          <img src="PUT_3927.JPG" alt="Match Action - Defensive header clearance" loading="lazy">
+          <div class="gallery-overlay">
+            <span class="gallery-tag">Match Action</span>
+            <span class="gallery-title">Defensive Clearances</span>
+          </div>
+          <div class="gallery-zoom-icon"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LIGHTBOX MODAL -->
+  <div class="lightbox" id="lightbox">
+    <div class="lightbox-content-wrapper">
+      <span class="lightbox-close" onclick="closeLightbox()"><i class="fa-solid fa-xmark"></i></span>
+      <span class="lightbox-nav lightbox-prev" onclick="changeLightboxImage(-1)"><i class="fa-solid fa-chevron-left"></i></span>
+      <span class="lightbox-nav lightbox-next" onclick="changeLightboxImage(1)"><i class="fa-solid fa-chevron-right"></i></span>
+      <img src="" alt="Full Action View" class="lightbox-img" id="lightbox-img">
+      <div class="lightbox-caption" id="lightbox-caption">Caption text</div>
+    </div>
+  </div>
+
+  <!-- CONTACT / SCOUT PORTAL -->
+  <section id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Scout's Corner</span>
+        <h2 class="section-title">Get in touch</h2>
+        <p class="section-desc">Football scouts, agents, team coaches, or clubs can request match footage, academic credentials, or trial dates here.</p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-info-panel">
+          <!-- Location -->
+          <div class="contact-card">
+            <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+            <div class="contact-details">
+              <h3>Based In</h3>
+              <p>Slim River / Puchong, Malaysia</p>
+            </div>
+          </div>
+
+          <!-- Email -->
+          <div class="contact-card">
+            <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+            <div class="contact-details">
+              <h3>Email Contact</h3>
+              <p><a href="mailto:mahatheshmavalavan@gmail.com">mahatheshmavalavan@gmail.com</a></p>
+            </div>
+          </div>
+
+          <!-- Quick Scout Report Sheet Download -->
+          <div class="contact-card">
+            <div class="contact-icon"><i class="fa-solid fa-file-pdf"></i></div>
+            <div class="contact-details">
+              <h3>Scout Sheet Printout</h3>
+              <p>Download player CV optimized for printing.</p>
+              <button onclick="window.print()" class="btn btn-secondary" style="margin-top: 10px; padding: 8px 16px; font-size: 13px;">
+                <i class="fa-solid fa-print"></i> Generate PDF
+              </button>
+            </div>
+          </div>
+
+          <!-- Socials -->
+          <div style="margin-top: 10px;">
+            <h4 style="font-size: 14px; text-transform: uppercase; color: var(--text-muted); margin-bottom: 12px;">Connect Online</h4>
+            <div class="social-links">
+              <a href="#" class="social-icon" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#" class="social-icon" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+              <a href="#" class="social-icon" title="YouTube"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Scouting Form -->
+        <form class="contact-form" id="scoutForm" onsubmit="handleScoutSubmit(event)">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="scoutName">Your Name *</label>
+              <input type="text" id="scoutName" required placeholder="e.g. John Doe">
+            </div>
+            <div class="form-group">
+              <label for="scoutRole">Your Role *</label>
+              <select id="scoutRole" required>
+                <option value="scout">Club Scout</option>
+                <option value="agent">Player Agent / Representative</option>
+                <option value="coach">Team Coach</option>
+                <option value="fan">Football Fan</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="scoutClub">Club / Organization Name</label>
+              <input type="text" id="scoutClub" placeholder="e.g. TBB FC / Selangor FC">
+            </div>
+            <div class="form-group">
+              <label for="scoutEmail">Email Address *</label>
+              <input type="email" id="scoutEmail" required placeholder="e.g. scout@club.com">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="scoutMsg">Message / Inquiry Details *</label>
+            <textarea id="scoutMsg" rows="5" required placeholder="Explain your inquiry (e.g., Trial details, scouting requirements, match video request)..."></textarea>
+          </div>
+
+          <div class="form-checkbox">
+            <input type="checkbox" id="trialRequest">
+            <label for="trialRequest">Requesting Player for Trial / Academy Training Session</label>
+          </div>
+
+          <button type="submit" class="submit-btn">
+            <i class="fa-solid fa-paper-plane"></i> Submit Inquiry
+          </button>
+          
+          <div class="submit-success" id="submit-success-msg">
+            <i class="fa-solid fa-circle-check"></i> Inquiry sent successfully! Mahathesh will contact you soon.
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2026 Mahathesh Mavalavan Portfolio. All rights reserved.</p>
+      <p>Designed with <span class="footer-highlight">Football Aesthetics</span> for Scouts & Coaches globally.</p>
+    </div>
+  </footer>
+
+  <!-- JAVASCRIPT LOGIC -->
+  <script>
+    // NAVIGATION TOGGLE
+    const mobileMenu = document.getElementById('mobile-menu');
+    const navLinks = document.getElementById('nav-links');
+
+    mobileMenu.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+      mobileMenu.querySelector('i').classList.toggle('fa-bars');
+      mobileMenu.querySelector('i').classList.toggle('fa-xmark');
+    });
+
+    // Close menu when link is clicked
+    document.querySelectorAll('#nav-links a').forEach(link => {
+      link.addEventListener('click', () => {
+        navLinks.classList.remove('active');
+        mobileMenu.querySelector('i').classList.add('fa-bars');
+        mobileMenu.querySelector('i').classList.remove('fa-xmark');
+      });
+    });
+
+    // ACTIVE NAV HIGHLIGHT ON SCROLL
+    const sections = document.querySelectorAll('section');
+    const navItems = document.querySelectorAll('#nav-links a');
+
+    window.addEventListener('scroll', () => {
+      let current = '';
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.clientHeight;
+        if (pageYOffset >= (sectionTop - 150)) {
+          current = section.getAttribute('id');
+        }
+      });
+
+      navItems.forEach(item => {
+        item.classList.remove('active');
+        if (item.getAttribute('href').slice(1) === current) {
+          item.classList.add('active');
+        }
+      });
+    });
+
+    // STATS ANIMATION ON SCROLL
+    const statsSection = document.getElementById('stats');
+    const statBars = document.querySelectorAll('.stat-bar-fill');
+    let animated = false;
+
+    function animateStats() {
+      const sectionPos = statsSection.getBoundingClientRect().top;
+      const screenPos = window.innerHeight / 1.2;
+
+      if (sectionPos < screenPos && !animated) {
+        statBars.forEach(bar => {
+          bar.style.width = bar.getAttribute('data-width');
+        });
+        animated = true;
+      }
+    }
+
+    window.addEventListener('scroll', animateStats);
+    window.addEventListener('load', animateStats);
+
+    // DYNAMIC PLAYER CARD IMAGE TOGGLER
+    // Cycles through 4 selected action shots for his player card to demonstrate gameplay
+    const playerCardImg = document.getElementById('card-player-img');
+    const cardImages = [
+      'IMG_20260404_233124_505.jpg', // Cyan Profile
+      'IMG_1816.JPG',               // Dribbling
+      'IMG_8324.jpg',               // Carrying ball
+      'IMG_8638.jpg',               // TBB FC Back
+      'PUT_3736.JPG'                // Academy kit
+    ];
+    let currentCardImgIndex = 0;
+
+    document.getElementById('card-img-toggle').addEventListener('click', () => {
+      currentCardImgIndex = (currentCardImgIndex + 1) % cardImages.length;
+      playerCardImg.style.opacity = '0';
+      
+      setTimeout(() => {
+        playerCardImg.src = cardImages[currentCardImgIndex];
+        playerCardImg.style.opacity = '1';
+      }, 150);
+    });
+
+    // RADAR CHART IMPLEMENTATION (HTML5 CANVAS)
+    const radarData = {
+      labels: ['Pace (Speed)', 'Dribbling', 'Shooting', 'Passing', 'Defense (Tackling)', 'Physical (Stamina)'],
+      values: [81, 81, 70, 79, 49, 69], // Matching player stats
+    };
+
+    function drawRadarChart() {
+      const canvas = document.getElementById('radarChart');
+      if (!canvas) return;
+      const ctx = canvas.getContext('2d');
+      const cx = canvas.width / 2;
+      const cy = canvas.height / 2;
+      const r = 110; // Radar radius
+      const numPoints = radarData.labels.length;
+
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+      // Draw background grid lines (levels 20%, 40%, 60%, 80%, 100%)
+      const levels = 5;
+      for (let level = 1; level <= levels; level++) {
+        const radius = (r / levels) * level;
+        ctx.beginPath();
+        for (let i = 0; i < numPoints; i++) {
+          const angle = (Math.PI * 2 / numPoints) * i - Math.PI / 2;
+          const x = cx + radius * Math.cos(angle);
+          const y = cy + radius * Math.sin(angle);
+          if (i === 0) ctx.moveTo(x, y);
+          else ctx.lineTo(x, y);
+        }
+        ctx.closePath();
+        ctx.strokeStyle = 'rgba(255, 255, 255, 0.05)';
+        ctx.stroke();
+      }
+
+      // Draw axis lines from center to outer points
+      ctx.beginPath();
+      for (let i = 0; i < numPoints; i++) {
+        const angle = (Math.PI * 2 / numPoints) * i - Math.PI / 2;
+        const x = cx + r * Math.cos(angle);
+        const y = cy + r * Math.sin(angle);
+        ctx.moveTo(cx, cy);
+        ctx.lineTo(x, y);
+      }
+      ctx.strokeStyle = 'rgba(255, 255, 255, 0.1)';
+      ctx.stroke();
+
+      // Plot data polygon
+      ctx.beginPath();
+      for (let i = 0; i < numPoints; i++) {
+        const value = radarData.values[i];
+        const radius = (value / 100) * r;
+        const angle = (Math.PI * 2 / numPoints) * i - Math.PI / 2;
+        const x = cx + radius * Math.cos(angle);
+        const y = cy + radius * Math.sin(angle);
+        if (i === 0) ctx.moveTo(x, y);
+        else ctx.lineTo(x, y);
+      }
+      ctx.closePath();
+      ctx.fillStyle = 'rgba(0, 240, 118, 0.15)';
+      ctx.fill();
+      ctx.strokeStyle = '#00f076';
+      ctx.lineWidth = 3;
+      ctx.stroke();
+
+      // Add points on vertices
+      for (let i = 0; i < numPoints; i++) {
+        const value = radarData.values[i];
+        const radius = (value / 100) * r;
+        const angle = (Math.PI * 2 / numPoints) * i - Math.PI / 2;
+        const x = cx + radius * Math.cos(angle);
+        const y = cy + radius * Math.sin(angle);
+        
+        ctx.beginPath();
+        ctx.arc(x, y, 4, 0, Math.PI * 2);
+        ctx.fillStyle = '#fbbf24';
+        ctx.fill();
+      }
+
+      // Add Labels & Stats values
+      ctx.fillStyle = '#f8fafc';
+      ctx.font = '600 11px Inter, sans-serif';
+      ctx.textAlign = 'center';
+      ctx.textBaseline = 'middle';
+
+      for (let i = 0; i < numPoints; i++) {
+        const angle = (Math.PI * 2 / numPoints) * i - Math.PI / 2;
+        // Offset labels slightly outwards
+        const labelRadius = r + 25;
+        const x = cx + labelRadius * Math.cos(angle);
+        const y = cy + labelRadius * Math.sin(angle);
+        
+        const label = radarData.labels[i];
+        const val = radarData.values[i];
+        
+        // Multi-line labels to fit beautifully
+        ctx.fillText(`${label} (${val})`, x, y);
+      }
+    }
+
+    window.addEventListener('load', drawRadarChart);
+
+    // TACTICAL PITCH INTERACTION
+    const positionsData = {
+      lw: {
+        title: "Left Wing (LW)",
+        badge: "Natural Position",
+        badgeClass: "natural",
+        desc: "Mahathesh's primary deployment on the pitch. Here, his explosive speed (81) and direct dribbling ability (81) allow him to stretch defenses. He operates as a classic winger or an inverted threat cutting inside to trigger shots (70) or crossing (73) to target forwards.",
+        attrs: ["Pace: 81", "Dribbling: 81", "Crossing: 73", "1v1 Isolation", "Inverted Runs"]
+      },
+      rw: {
+        title: "Right Wing (RW)",
+        badge: "Secondary Position",
+        badgeClass: "",
+        desc: "Capable of slotting on the opposite flank. In this role, he acts as a traditional winger utilizing his crossing ability (73) or crosses into the box, or uses speed to beat fullbacks to the endline. Provides tactical balance to double-winger systems.",
+        attrs: ["Acceleration", "Crossing: 73", "Tactical Width", "Off-ball Runs"]
+      },
+      st: {
+        title: "Striker (ST)",
+        badge: "Secondary Position",
+        badgeClass: "",
+        desc: "Deploys as a mobile front striker. Relies on speed (81) to run off the shoulders of central defenders and exploit space. Capable of high-intensity pressing and counter-attacking configurations.",
+        attrs: ["Finishing: 70", "Deep Runs", "Pressing", "Speed: 81"]
+      },
+      cf: {
+        title: "Centre Forward (CF)",
+        badge: "Secondary Position",
+        badgeClass: "",
+        desc: "Plays as a link-up forward behind a main striker. Combines his passing skill (79) with dribbling control (81) to drop deep, receive the ball, and turn defenders. Connects midfield structure directly to goal scorers.",
+        attrs: ["Dribbling: 81", "Link-up Play", "Passing: 79", "Space Exploitation"]
+      },
+      cam: {
+        title: "Centre Attacking Midfield (CAM)",
+        badge: "Secondary Position",
+        badgeClass: "",
+        desc: "Deploys in the pocket between lines. Serves as a playmaker creating chances via passing (79) and key assists. Uses vision and spacing awareness to unlock stubborn defensive blocks.",
+        attrs: ["Passing: 79", "Vision", "Dribbling: 81", "Chance Creation"]
+      },
+      cm: {
+        title: "Centre Midfield (CM)",
+        badge: "Secondary Position",
+        badgeClass: "",
+        desc: "A transition manager in the middle of the pitch. Brings high stamina (69) to assist box-to-box movement, supplying key distribution (79) and tracking back to disrupt opponent plays.",
+        attrs: ["Passing: 79", "Stamina: 69", "Distribution", "Tactical Discipline"]
+      },
+      rb: {
+        title: "Right Back (RB)",
+        badge: "Secondary Position",
+        badgeClass: "",
+        desc: "Provides defensive and overlapping width. Uses speed (81) to recover during defensive phases and support the attack via overlaps. His tackling rating (49) is compensated by spatial awareness and recovery velocity.",
+        attrs: ["Speed: 81", "Recovery Pace", "Overlapping Runs", "Defensive Workrate"]
+      }
+    };
+
+    const positionNodes = document.querySelectorAll('.position-node');
+    const panelTitle = document.getElementById('panel-title');
+    const panelBadge = document.getElementById('panel-badge');
+    const panelDesc = document.getElementById('panel-desc');
+    const panelAttrs = document.getElementById('panel-attributes');
+
+    positionNodes.forEach(node => {
+      node.addEventListener('click', () => {
+        // Toggle Active state on nodes
+        positionNodes.forEach(n => n.classList.remove('active'));
+        node.classList.add('active');
+
+        // Update Panel
+        const pos = node.getAttribute('data-pos');
+        const data = positionsData[pos];
+
+        panelTitle.innerText = data.title;
+        panelBadge.innerText = data.badge;
+        
+        // Handle badge styling (natural position vs secondary)
+        if (data.badgeClass === 'natural') {
+          panelBadge.className = 'pos-badge natural';
+        } else {
+          panelBadge.className = 'pos-badge';
+        }
+        
+        panelDesc.innerText = data.desc;
+
+        // Render attributes tags
+        panelAttrs.innerHTML = '';
+        data.attrs.forEach(attr => {
+          const span = document.createElement('span');
+          span.className = 'pos-attr';
+          
+          // Style numbers differently
+          if (attr.includes(':')) {
+            const parts = attr.split(':');
+            span.innerHTML = `${parts[0]}: <span>${parts[1].trim()}</span>`;
+          } else {
+            span.innerText = attr;
+          }
+          
+          panelAttrs.appendChild(span);
+        });
+      });
+    });
+
+    // TIMELINE ANIMATION ON SCROLL
+    const timelineItems = document.querySelectorAll('.timeline-item');
+    
+    function checkTimelineScroll() {
+      timelineItems.forEach(item => {
+        const itemPos = item.getBoundingClientRect().top;
+        const screenPos = window.innerHeight / 1.15;
+        if (itemPos < screenPos) {
+          item.classList.add('visible');
+        }
+      });
+    }
+
+    window.addEventListener('scroll', checkTimelineScroll);
+    window.addEventListener('load', checkTimelineScroll);
+
+    // PHOTO GALLERY FILTERING
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    const galleryItems = document.querySelectorAll('.gallery-item');
+
+    filterButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        filterButtons.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+
+        const filter = btn.getAttribute('data-filter');
+
+        galleryItems.forEach(item => {
+          const category = item.getAttribute('data-category');
+          if (filter === 'all' || category === filter) {
+            item.style.display = 'block';
+          } else {
+            item.style.display = 'none';
+          }
+        });
+      });
+    });
+
+    // LIGHTBOX SYSTEM
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightbox-img');
+    const lightboxCaption = document.getElementById('lightbox-caption');
+    
+    // Storing data for lightbox cycling
+    const imagesData = [
+      { src: 'IMG_20260404_233124_505.jpg', caption: 'Mahathesh Mavalavan - Cyan Profile Kit' },
+      { src: 'IMG_1816.JPG', caption: 'Controlling play down the flank with intense pace' },
+      { src: 'IMG_20260404_233124_528.jpg', caption: 'Warmup and preparation - Bloomball Academy kit' },
+      { src: 'IMG_3141.jpg', caption: 'Winning high air headers against opponents' },
+      { src: 'IMG_3151.jpg', caption: 'Shielding ball and tackling challenge' },
+      { src: 'IMG_8324.jpg', caption: 'Direct dribble carrying possession forward' },
+      { src: 'IMG_8638.jpg', caption: 'Representing TBB FC - No. 20 (Back View)' },
+      { src: 'IMG_8805.jpg', caption: 'Aggressive box entrance under tackle pressure' },
+      { src: 'IMG_8963.jpg', caption: 'Explosive acceleration run down the wing' },
+      { src: 'PUT_3400.JPG', caption: 'Ball interception and high pressing action' },
+      { src: 'PUT_3736.JPG', caption: 'Academic matchday kit portrait' },
+      { src: 'PUT_3739.JPG', caption: 'Precision cross delivery into penalty box' },
+      { src: 'PUT_3927.JPG', caption: 'Defensive aerial clearance during league matches' }
+    ];
+    let activeLightboxIndex = 0;
+
+    function openLightbox(index) {
+      activeLightboxIndex = index;
+      lightboxImg.src = imagesData[index].src;
+      lightboxCaption.innerText = imagesData[index].caption;
+      lightbox.classList.add('active');
+      document.body.style.overflow = 'hidden'; // Stop page scroll
+    }
+
+    function closeLightbox() {
+      lightbox.classList.remove('active');
+      document.body.style.overflow = ''; // Enable page scroll
+    }
+
+    function changeLightboxImage(direction) {
+      activeLightboxIndex = (activeLightboxIndex + direction + imagesData.length) % imagesData.length;
+      lightboxImg.style.opacity = '0.3';
+      setTimeout(() => {
+        lightboxImg.src = imagesData[activeLightboxIndex].src;
+        lightboxCaption.innerText = imagesData[activeLightboxIndex].caption;
+        lightboxImg.style.opacity = '1';
+      }, 100);
+    }
+
+    // Keyboard support for Lightbox
+    document.addEventListener('keydown', (e) => {
+      if (!lightbox.classList.contains('active')) return;
+      
+      if (e.key === 'Escape') closeLightbox();
+      if (e.key === 'ArrowRight') changeLightboxImage(1);
+      if (e.key === 'ArrowLeft') changeLightboxImage(-1);
+    });
+
+    // Handle Lightbox Click outside content
+    lightbox.addEventListener('click', (e) => {
+      if (e.target === lightbox) {
+        closeLightbox();
+      }
+    });
+
+    // CONTACT FORM SUBMISSION
+    function handleScoutSubmit(event) {
+      event.preventDefault();
+      
+      const name = document.getElementById('scoutName').value;
+      const role = document.getElementById('scoutRole').value;
+      const club = document.getElementById('scoutClub').value;
+      const email = document.getElementById('scoutEmail').value;
+      const msg = document.getElementById('scoutMsg').value;
+      const isTrial = document.getElementById('trialRequest').checked;
+      
+      console.log('Scouting Inquiry Received:', {
+        name,
+        role,
+        club,
+        email,
+        msg,
+        isTrial
+      });
+
+      // Show Success Msg
+      const successMsg = document.getElementById('submit-success-msg');
+      successMsg.style.display = 'block';
+      
+      // Reset form
+      document.getElementById('scoutForm').reset();
+      
+      // Fade out success message after 5 seconds
+      setTimeout(() => {
+        successMsg.style.opacity = '0';
+        setTimeout(() => {
+          successMsg.style.display = 'none';
+          successMsg.style.opacity = '1';
+        }, 300);
+      }, 5000);
+    }
+  </script>
+</body>
+</html>
